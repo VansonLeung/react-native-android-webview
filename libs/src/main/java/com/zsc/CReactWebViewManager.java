@@ -150,7 +150,7 @@ public class CReactWebViewManager extends SimpleViewManager<WebView> {
             for (int i = 0; i < nativeArray.size(); i++) {
               String value = nativeArray.getString(i);
               interceptValue = value;
-              if (!TextUtils.isEmpty(value) && url.indexOf(value) > 0) {
+              if (!TextUtils.isEmpty(value) && url.indexOf(value) >= 0) {
                 isIntercet = true;
                 break;
               }
